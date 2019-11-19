@@ -172,9 +172,9 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
             node.setData(data);
         }
         
-        // se tem 1 folha
-        // tem folha esquerda somente
+        // se so tem 1 folha
         else if (node.getParent() != null) {
+            // tem folha esquerda somente
             if (!node.getLeft().isEmpty()) {
                 if (node.equals(node.getParent().getLeft())) {
                     node.getParent().setLeft(node.getLeft());
@@ -194,7 +194,7 @@ public class BSTImpl<T extends Comparable<T>> implements BST<T> {
                     node.getRight().setParent(node.getParent());
                 }
             }
-	        // é root
+	        // é root e so tem 1 folha
         } else {
             if (!node.getLeft().isEmpty()) {
                 root = (BSTNode<T>) root.getLeft();
