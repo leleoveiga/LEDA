@@ -1,11 +1,10 @@
 package adt.bst;
 
-import static org.junit.jupiter.api.Assertions.*;
-
+import adt.bt.BTNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import adt.bt.BTNode;
+import static org.junit.jupiter.api.Assertions.*;
 
 class TEst {
 	
