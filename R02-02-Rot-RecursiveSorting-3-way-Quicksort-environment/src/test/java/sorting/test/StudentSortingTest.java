@@ -7,6 +7,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import sorting.AbstractSorting;
+import sorting.divideAndConquer.MergeSort;
 import sorting.divideAndConquer.QuickSort;
 
 public class StudentSortingTest {
@@ -39,7 +40,7 @@ public class StudentSortingTest {
 	private void getImplementation() {
 		// TODO O aluno deve instanciar sua implementação abaixo ao invés de
 		// null
-		this.implementation = new QuickSort();
+		this.implementation = new MergeSort<>();
 	}
 
 	public void populaVetorTamanhoPar(Integer[] arrayPadrao) {
@@ -89,15 +90,15 @@ public class StudentSortingTest {
 		genericTest(vetorVazio);
 	}
 
-//	@Test
-//	public void testSort04() {
-//		genericTest(vetorValoresIguais);
-//	}
-//
-//	@Test
-//	public void testSort05() {
-//		genericTest(vetorValoresRepetidos);
-//	}
+	@Test
+	public void testSort04() {
+		genericTest(vetorValoresIguais);
+	}
+
+	@Test
+	public void testSort05() {
+		genericTest(vetorValoresRepetidos);
+	}
 
 	// MÉTODOS QUE OS ALUNOS PODEM CRIAR
 	/**
